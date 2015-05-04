@@ -1,0 +1,13 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#ifdef __OBJC__
+
+    // Warning for new api. Need to remove before appstore
+    // End Warning
+
+    #import <Cocoa/Cocoa.h>
+#endif

@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  Copy Clever
+
+  Created by Quang Nguyen on 14/02/15.
+  Copyright (c) 2015 Quang Nguyen. All rights reserved.
+*/
+
+"StartRecord" = "Start recording items";
+"StopRecord" = "Stop recording items";
+"Quit" = "Quit CopyClever";
+"Help" = "Help Center";
+"About" = "About";
+"Preferences" = "Preferences...";
+

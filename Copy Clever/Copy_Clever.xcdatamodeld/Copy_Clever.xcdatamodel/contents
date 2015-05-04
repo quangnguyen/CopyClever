@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14D136" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Group" representedClassName="Group" syncable="YES">
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="pasteboardItem" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PasteboardItem" inverseName="group" inverseEntity="PasteboardItem" syncable="YES"/>
+    </entity>
+    <entity name="PasteboardItem" representedClassName="PasteboardItem" syncable="YES">
+        <attribute name="createdDate" attributeType="Date" syncable="YES"/>
+        <attribute name="hashNumber" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="isLastUsedItem" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="lastUsedDate" attributeType="Date" syncable="YES"/>
+        <attribute name="overview" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="group" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Group" inverseName="pasteboardItem" inverseEntity="Group" syncable="YES"/>
+        <relationship name="sourceApp" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SourceApp" inverseName="pasteboardItem" inverseEntity="SourceApp" syncable="YES"/>
+    </entity>
+    <entity name="PasteboardItemImage" representedClassName="PasteboardItemImage" parentEntity="PasteboardItem" syncable="YES">
+        <attribute name="image" attributeType="Transformable" storedInTruthFile="YES" syncable="YES"/>
+    </entity>
+    <entity name="PasteboardItemText" representedClassName="PasteboardItemText" parentEntity="PasteboardItem" syncable="YES">
+        <attribute name="rtfData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" storedInTruthFile="YES" syncable="YES"/>
+        <attribute name="rtfdData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" storedInTruthFile="YES" syncable="YES"/>
+        <attribute name="stringValue" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="PasteboardItemURL" representedClassName="PasteboardItemURL" parentEntity="PasteboardItem" syncable="YES">
+        <attribute name="filenames" optional="YES" attributeType="Transformable" storedInTruthFile="YES" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="Transformable" storedInTruthFile="YES" syncable="YES"/>
+    </entity>
+    <entity name="SourceApp" representedClassName="SourceApp" syncable="YES">
+        <attribute name="image" attributeType="Transformable" storedInTruthFile="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" indexed="YES" syncable="YES"/>
+        <relationship name="pasteboardItem" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PasteboardItem" inverseName="sourceApp" inverseEntity="PasteboardItem" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Group" positionX="0" positionY="0" width="128" height="90"/>
+        <element name="PasteboardItem" positionX="0" positionY="0" width="128" height="150"/>
+        <element name="PasteboardItemImage" positionX="0" positionY="0" width="128" height="60"/>
+        <element name="PasteboardItemText" positionX="0" positionY="0" width="128" height="90"/>
+        <element name="PasteboardItemURL" positionX="0" positionY="0" width="128" height="75"/>
+        <element name="SourceApp" positionX="0" positionY="0" width="128" height="90"/>
+    </elements>
+</model>

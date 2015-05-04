@@ -1,0 +1,3 @@
+[submodule "externals/masshortcut"]
+	path = externals/masshortcut
+	url = https://github.com/shpakovski/MASShortcut.git
