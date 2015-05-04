@@ -1,3 +1,6 @@
 [submodule "externals/masshortcut"]
 	path = externals/masshortcut
 	url = https://github.com/shpakovski/MASShortcut.git
+[submodule "MASPreferences"]
+	path = MASPreferences
+	url = https://github.com/shpakovski/MASPreferences.git
