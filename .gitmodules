@@ -4,3 +4,6 @@
 [submodule "MASPreferences"]
 	path = MASPreferences
 	url = https://github.com/shpakovski/MASPreferences.git
+[submodule "externals/MASPreferences"]
+	path = externals/MASPreferences
+	url = https://github.com/shpakovski/MASPreferences.git
