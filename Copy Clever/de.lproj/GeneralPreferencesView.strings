@@ -1,0 +1,33 @@
+
+/* Class = "NSButtonCell"; title = "Launch CopyClever at login"; ObjectID = "174"; */
+"174.title" = "Launch CopyClever at login";
+
+/* Class = "NSButtonCell"; title = "Show desktop notifications"; ObjectID = "191"; */
+"191.title" = "Show desktop notifications";
+
+/* Class = "NSTextFieldCell"; title = "Startup"; ObjectID = "196"; */
+"196.title" = "Startup";
+
+/* Class = "NSTextFieldCell"; title = "Display notifications if a new item was recorded"; ObjectID = "5Xr-gS-cBT"; */
+"5Xr-gS-cBT.title" = "Display notifications if a new item was recorded";
+
+/* Class = "NSTextFieldCell"; title = "x"; ObjectID = "8ef-OI-hy9"; */
+"8ef-OI-hy9.title" = "x";
+
+/* Class = "NSTextFieldCell"; title = "Width and Height of CopyClever's popup view"; ObjectID = "BLb-y7-dfh"; */
+"BLb-y7-dfh.title" = "Width and Height of CopyClever's popup view";
+
+/* Class = "NSTextFieldCell"; title = "Notifications"; ObjectID = "CHQ-g0-4J6"; */
+"CHQ-g0-4J6.title" = "Notifications";
+
+/* Class = "NSTextFieldCell"; title = "Appearance"; ObjectID = "OvG-nl-ODo"; */
+"OvG-nl-ODo.title" = "Appearance";
+
+/* Class = "NSTextFieldCell"; title = "Start CopyClever automatically"; ObjectID = "ho1-NB-3Fp"; */
+"ho1-NB-3Fp.title" = "Start CopyClever automatically";
+
+/* Class = "NSTextFieldCell"; title = "Size of CopyClever's view"; ObjectID = "iZI-rQ-rog"; */
+"iZI-rQ-rog.title" = "Size of CopyClever's view";
+
+/* Class = "NSTextFieldCell"; title = "px"; ObjectID = "nb7-sy-pfQ"; */
+"nb7-sy-pfQ.title" = "px";
