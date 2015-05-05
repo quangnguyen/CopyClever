@@ -6,7 +6,11 @@ CopyClever is a opensource tool that provides accessing to your clipboard's hist
 ## Features
 
 * Record and display copied or cut items
-* Paste items of clipboard's history with double click
+* Store recorded time of items and the source apps where items come from
+* Name items with customized titles
+* Fully review items of clipboard's history
+* Paste items from clipboard's history with double click
+* Paste text items as plain text or rich text format (RTF)
 * Restore last item to pasteboard while starting app at login
 * Support texts, photos, files, folder
 * Support OS X 10.8 and newer
