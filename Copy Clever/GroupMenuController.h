@@ -23,6 +23,8 @@ extern NSString* const CCInitTagColor;
 @property NSString* selectedImageName;
 
 @property (weak) IBOutlet NSSegmentedControl* groupControl;
+@property (weak) IBOutlet NSMenu *groupControlMenu;
+@property (weak) IBOutlet NSMenuItem *clearGroupMenuItem;
 
 @property (weak) IBOutlet NSMenuItem* redItem;
 @property (weak) IBOutlet NSMenuItem* orangeItem;

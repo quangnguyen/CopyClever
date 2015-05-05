@@ -435,7 +435,7 @@
                                 </segment>
                                 <segment image="NSGoRightTemplate" width="20">
                                     <nil key="label"/>
-                                    <menu key="menu" id="9oS-FE-Eja">
+                                    <menu key="menu" autoenablesItems="NO" id="9oS-FE-Eja">
                                         <items>
                                             <menuItem title="Red" image="StarRed12" id="Lif-gk-RqH">
                                                 <modifierMask key="keyEquivalentModifierMask"/>
@@ -480,7 +480,7 @@
                                                 </connections>
                                             </menuItem>
                                             <menuItem isSeparatorItem="YES" id="OWc-KS-uSr"/>
-                                            <menuItem title="Clear Group" id="YrE-yu-CUH" userLabel="Clear Group">
+                                            <menuItem title="Clear Group" enabled="NO" id="YrE-yu-CUH" userLabel="Clear Group">
                                                 <modifierMask key="keyEquivalentModifierMask"/>
                                                 <connections>
                                                     <action selector="clickOnClearGroup:" target="5ZW-zj-hFg" id="Hb0-rK-sna"/>
@@ -532,11 +532,13 @@
                     <constraint firstItem="28z-T6-R5M" firstAttribute="centerY" secondItem="TGN-NN-P42" secondAttribute="centerY" id="zeN-j8-R5b"/>
                 </constraints>
             </view>
-            <point key="canvasLocation" x="63" y="-134.5"/>
+            <point key="canvasLocation" x="680" y="-11.5"/>
         </window>
         <customObject id="T0H-Ey-DdJ" customClass="GroupMenuController">
             <connections>
+                <outlet property="clearGroupMenuItem" destination="YrE-yu-CUH" id="r3S-F3-z6T"/>
                 <outlet property="groupControl" destination="TGN-NN-P42" id="PVF-mh-mgn"/>
+                <outlet property="groupControlMenu" destination="9oS-FE-Eja" id="VB0-ex-3ar"/>
             </connections>
         </customObject>
         <customObject id="ADC-Lu-v2R" userLabel="Change Group Name Controller" customClass="ChangeGroupNameSheetController"/>
@@ -575,7 +577,7 @@
                     </connections>
                 </menuItem>
             </items>
-            <point key="canvasLocation" x="487.5" y="-207.5"/>
+            <point key="canvasLocation" x="727.5" y="-149.5"/>
         </menu>
         <menu id="V4j-ns-3b2" userLabel="Context Menu">
             <items>
@@ -593,7 +595,7 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
             </items>
-            <point key="canvasLocation" x="484" y="-40.5"/>
+            <point key="canvasLocation" x="724" y="17.5"/>
         </menu>
     </objects>
     <resources>

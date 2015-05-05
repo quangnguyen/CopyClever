@@ -51,6 +51,7 @@ int const URL_ITEM = 3;
         [_arrayController setEntityName:@"PasteboardItem"];
         [_arrayController fetch:self];
         [_arrayController addObserver:self forKeyPath:@"arrangedObjects" options:NSKeyValueObservingOptionNew context:nil];
+        
         NSSortDescriptor* sorter = [[NSSortDescriptor alloc] initWithKey:@"createdDate" ascending:NO];
         NSArray* descriptors = @[ sorter ];
         [_arrayController setSortDescriptors:descriptors];
@@ -297,6 +298,7 @@ int const URL_ITEM = 3;
     [_arrayController removeObjectsAtArrangedObjectIndexes:indexes];
     [_deleteButton setEnabled:NO];
     [_quickLookButton setEnabled:NO];
+    [[_groupMenuController clearGroupMenuItem] setEnabled:NO];
 }
 
 #pragma Quick View
@@ -594,6 +596,7 @@ int const URL_ITEM = 3;
 {
     [_deleteButton setEnabled:YES];
     [_quickLookButton setEnabled:[[_tableView selectedRowIndexes] count] == 1];
+    [[_groupMenuController clearGroupMenuItem] setEnabled:YES];
 }
 
 - (void)controlTextDidChange:(NSNotification*)notification

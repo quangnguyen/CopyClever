@@ -10,33 +10,33 @@
 	<string>CopyClever</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>257B87C444D84E544A54244D5AA42A2445E01EE9</key>
+		<string>https://bitbucket.org/quangdungnguyen/copyclever.git</string>
 		<key>BB3C4AE3EC7E6771B5CB3DC143FB7B67396AE556</key>
 		<string>https://github.com/shpakovski/MASShortcut.git</string>
-		<key>C4BD4A87479BC9C91633E2CCA7E47C39ED56D09B</key>
-		<string>https://bitbucket.org/quangdungnguyen/copyclever.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>CopyClever.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>257B87C444D84E544A54244D5AA42A2445E01EE9</key>
+		<string>../..</string>
 		<key>BB3C4AE3EC7E6771B5CB3DC143FB7B67396AE556</key>
 		<string>../..externals/masshortcut</string>
-		<key>C4BD4A87479BC9C91633E2CCA7E47C39ED56D09B</key>
-		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://bitbucket.org/quangdungnguyen/copyclever.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>C4BD4A87479BC9C91633E2CCA7E47C39ED56D09B</string>
+	<string>257B87C444D84E544A54244D5AA42A2445E01EE9</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>C4BD4A87479BC9C91633E2CCA7E47C39ED56D09B</string>
+			<string>257B87C444D84E544A54244D5AA42A2445E01EE9</string>
 			<key>IDESourceControlWCCName</key>
 			<string>CopyClever</string>
 		</dict>

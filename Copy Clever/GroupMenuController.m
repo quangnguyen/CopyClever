@@ -34,6 +34,7 @@ NSString* const CCInitTagColor = @"InitTagColor";
     NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
     NSInteger colorNumber = [defaults integerForKey:CCInitTagColor];
     [self setColorForFirstSegment:colorNumber];
+//    [_clearGroupMenuItem setEnabled:NO];
 }
 
 - (void)setColorForFirstSegment:(NSInteger)colorNumber
