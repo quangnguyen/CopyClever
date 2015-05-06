@@ -59,6 +59,8 @@ static PasteboardController* sharedInstance;
     }
 }
 
+#pragma mark Fetch Timer
+
 - (void)startNewFetchTimer
 {
     float checkingInterval = [defaults floatForKey:CCCheckingInterval];
@@ -161,7 +163,6 @@ static PasteboardController* sharedInstance;
 
 - (void)synchronizeWithPasteboard
 {
-    NSLog(@"%@", [NSDate new]);
     if (_changesCount < [_pasteBoard changeCount]) {
         [self saveNewItemFromPasteBoard:_pasteBoard];
         _changesCount = [_pasteBoard changeCount];

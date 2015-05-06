@@ -6,15 +6,14 @@
 
 @interface GeneralPreferencesViewController : NSViewController <MASPreferencesViewController>
 
-@property (weak) IBOutlet NSButton *startAtLoginButton;
-@property (weak) IBOutlet NSButton *restoreButton;
-@property (weak) IBOutlet NSButton *notificationButton;
+@property (weak) IBOutlet NSButton* startAtLoginButton;
+@property (weak) IBOutlet NSButton* restoreButton;
+@property (weak) IBOutlet NSButton* notificationButton;
+@property (weak) IBOutlet NSButton* fontButton;
 
-
-
-- (IBAction)launchAtLogInClicked:(NSButton *)sender;
-- (IBAction)restoreClicked:(NSButton *)sender;
+- (IBAction)launchAtLogInClicked:(NSButton*)sender;
+- (IBAction)restoreClicked:(NSButton*)sender;
 - (IBAction)notificationButtonClicked:(id)sender;
-
+- (IBAction)useSameFontClicked:(NSButton*)sender;
 
 @end

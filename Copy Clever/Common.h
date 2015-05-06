@@ -16,6 +16,7 @@ extern NSString *const CCPaused;
 extern NSString *const CCStartAtLogin;
 extern NSString *const CCRestorePasteboard;
 extern NSString *const CCNotificationCenter;
+extern NSString *const CCUseSameFont;
 extern NSString *const CCCheckingInterval;
 
 @end

@@ -10,12 +10,12 @@
 #import "Shortcut.h"
 
 // Pick a preference key to store the shortcut between launches
-static NSString *const kPreferenceGlobalShortcut = @"PreferencesShortcut";
-static NSString *const kShortCutPaste = @"ShortCutPaste";
+static NSString* const kPreferenceGlobalShortcut = @"PreferencesShortcut";
+static NSString* const kShortCutPaste = @"ShortCutPaste";
 
 @interface ShortcutPreferencesViewController : NSViewController <MASPreferencesViewController>
 
-@property (weak) IBOutlet MASShortcutView *shortcutOpenView;
-@property (weak) IBOutlet MASShortcutView *shortcutPasteView;
+@property (weak) IBOutlet MASShortcutView* shortcutOpenView;
+@property (weak) IBOutlet MASShortcutView* shortcutPasteView;
 
 @end
