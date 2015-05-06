@@ -9,7 +9,7 @@
 #import "MainWindowController.h"
 #import "StatusItemView.h"
 #import "AppDelegate.h"
-#import "MASPreferencesWindowController.h"
+#import "Common.h"
 #import "GroupMenuController.h"
 #import "Group.h"
 

@@ -7,6 +7,7 @@
 //
 
 #import "PopupMenuController.h"
+#import "Common.h"
 #import "MASPreferencesWindowController.h"
 #import "GeneralPreferencesViewController.h"
 #import "ShortcutPreferencesViewController.h"

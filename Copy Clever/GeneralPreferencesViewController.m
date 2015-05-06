@@ -1,7 +1,7 @@
 
 #import "GeneralPreferencesViewController.h"
 #import <ServiceManagement/ServiceManagement.h>
-#import "MASPreferencesWindowController.h"
+#import "Common.h"
 
 @implementation GeneralPreferencesViewController
 
