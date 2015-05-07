@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "MASPreferencesWindowController.h"
+#import "Common.h"
 #import "Shortcut.h"
 #import "ShortcutPreferencesViewController.h"
 
@@ -23,10 +23,10 @@
 - (void)applicationDidFinishLaunching:(NSNotification*)aNotification
 {
     // Insert code here to initialize your application
+    [self setUpUserDefaults];
     [self setUpNotification];
     [self setUpMenuBar];
     [self setUpMainWindow];
-    [self setUpUserDefaults];
     [self setUpPasteboardController];
     [self setUpShortCuts];
 }
@@ -54,6 +54,8 @@
 {
     NSMutableDictionary* defaultValues = [[NSMutableDictionary alloc] init];
     //    [defaultValues setValue:NO forKey:CCPastePlainText];
+    [defaultValues setValue:[NSNumber numberWithFloat:0.5f] forKey:CCCheckingInterval];
+    [defaultValues setValue:[NSNumber numberWithBool:YES] forKey:CCUseSameFont];
     NSUserDefaults* userDefaults = [NSUserDefaults standardUserDefaults];
     [userDefaults registerDefaults:defaultValues];
 }

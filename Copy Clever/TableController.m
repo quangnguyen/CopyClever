@@ -17,6 +17,7 @@
 #import "PasteboardItemText.h"
 #import "PasteboardItemURL.h"
 #import "DateUtility.h"
+#import "Common.h"
 
 int const IMAGE_ITEM = 1;
 int const TEXT_ITEM = 2;
@@ -26,6 +27,7 @@ int const URL_ITEM = 3;
     NSPredicate* _searchPredicate;
     NSInteger popoverRow;
     NSManagedObjectContext* _context;
+    NSUserDefaults* _userDefaults;
 }
 
 @synthesize tableView = _tableView;
@@ -38,6 +40,7 @@ int const URL_ITEM = 3;
 {
     self = [super init];
     if (self) {
+        _userDefaults = [NSUserDefaults standardUserDefaults];
         popoverRow = -1;
 
         AppDelegate* appDelegate = (AppDelegate*)[[NSApplication sharedApplication] delegate];
@@ -238,9 +241,13 @@ int const URL_ITEM = 3;
     }
     else if ([pasteboardItemText rtfData]) {
         NSMutableAttributedString* rtfString = [[NSMutableAttributedString alloc] initWithRTF:[pasteboardItemText rtfData] documentAttributes:nil];
-        NSFont* font = [NSFont systemFontOfSize:11.0];
-        NSRange range = NSMakeRange(0, rtfString.length);
-        [rtfString addAttribute:NSFontAttributeName value:font range:range];
+        BOOL resizeFont = [_userDefaults boolForKey:CCUseSameFont];
+        if (resizeFont) {
+            NSFont* font = [NSFont systemFontOfSize:11.0];
+            NSRange range = NSMakeRange(0, rtfString.length);
+            [rtfString addAttribute:NSFontAttributeName value:font range:range];
+        }
+        
         if (rtfString) {
             [textCellView.textField setAttributedStringValue:rtfString];
         }

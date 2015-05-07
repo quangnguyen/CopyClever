@@ -18,31 +18,31 @@
 #pragma mark -
 #pragma mark MASPreferencesViewController
 
-- (NSString *)identifier
+- (NSString*)identifier
 {
     return @"ShortcutPreferences";
 }
 
-- (NSImage *)toolbarItemImage
+- (NSImage*)toolbarItemImage
 {
     return [NSImage imageNamed:@"Keyboard"];
 }
 
-- (NSString *)toolbarItemLabel
+- (NSString*)toolbarItemLabel
 {
     return NSLocalizedString(@"Keyboard", @"Toolbar item name for the shortcut preference pane");
 }
 
--(void)awakeFromNib {
+- (void)awakeFromNib
+{
     // Associate the shortcut view with user defaults
     [_shortcutOpenView setAssociatedUserDefaultsKey:kPreferenceGlobalShortcut];
-    [_shortcutPasteView setAssociatedUserDefaultsKey:kShortCutPaste]; 
+    [_shortcutPasteView setAssociatedUserDefaultsKey:kShortCutPaste];
 }
 
--(void)viewDidDisappear {
-//    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-
+- (void)viewDidDisappear
+{
+    //    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 }
-
 
 @end

@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		A4076BCA1AA8580C00F9725D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4076BC91AA8580C00F9725D /* WebKit.framework */; };
 		A412ACE31A9A57D600FEE37D /* ActionTemplate.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A412ACE21A9A57D600FEE37D /* ActionTemplate.pdf */; };
+		A4176C8A1AFA248200644699 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = A4176C891AFA248200644699 /* Common.m */; };
+		A4176C971AFA266000644699 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A4176C8F1AFA266000644699 /* .gitignore */; };
+		A4176C991AFA266000644699 /* MASPreferences.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A4176C911AFA266000644699 /* MASPreferences.podspec */; };
+		A4176C9A1AFA266000644699 /* MASPreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4176C931AFA266000644699 /* MASPreferencesWindow.xib */; };
+		A4176C9B1AFA266000644699 /* MASPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4176C951AFA266000644699 /* MASPreferencesWindowController.m */; };
 		A4282D8F1A9A60A9007AA13B /* Delete.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A4282D8E1A9A60A9007AA13B /* Delete.pdf */; };
 		A4389C6A1AF679E20031B7BC /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4389C691AF679E20031B7BC /* MainWindow.xib */; };
 		A439E1D21AF75AE5002EA8A8 /* DateUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = A439E1D11AF75AE5002EA8A8 /* DateUtility.m */; };
@@ -58,8 +63,6 @@
 		A4A1C4FD19B69158004394B9 /* TableController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A1C4F919B69158004394B9 /* TableController.m */; };
 		A4A1C4FE19B69158004394B9 /* TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A1C4FB19B69158004394B9 /* TableView.m */; };
 		A4A1C50219B69520004394B9 /* Copy Clever.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = A4A1C50119B69520004394B9 /* Copy Clever.entitlements */; };
-		A4AA18341A4F3DE300181125 /* MASPreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4AA18311A4F3DE300181125 /* MASPreferencesWindow.xib */; };
-		A4AA18351A4F3DE300181125 /* MASPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AA18331A4F3DE300181125 /* MASPreferencesWindowController.m */; };
 		A4AAC24A1A9697A00064322D /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AAC2491A9697A00064322D /* Background.png */; };
 		A4AAD8F01A83870700EAE0BC /* dogWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AAD8EE1A83870700EAE0BC /* dogWhite.png */; };
 		A4AAD8F11A83870700EAE0BC /* dogBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = A4AAD8EF1A83870700EAE0BC /* dogBlack.png */; };
@@ -128,6 +131,14 @@
 /* Begin PBXFileReference section */
 		A4076BC91AA8580C00F9725D /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		A412ACE21A9A57D600FEE37D /* ActionTemplate.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ActionTemplate.pdf; sourceTree = "<group>"; };
+		A4176C881AFA248200644699 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		A4176C891AFA248200644699 /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
+		A4176C8F1AFA266000644699 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		A4176C911AFA266000644699 /* MASPreferences.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MASPreferences.podspec; sourceTree = "<group>"; };
+		A4176C921AFA266000644699 /* MASPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASPreferencesViewController.h; sourceTree = "<group>"; };
+		A4176C931AFA266000644699 /* MASPreferencesWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MASPreferencesWindow.xib; sourceTree = "<group>"; };
+		A4176C941AFA266000644699 /* MASPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASPreferencesWindowController.h; sourceTree = "<group>"; };
+		A4176C951AFA266000644699 /* MASPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASPreferencesWindowController.m; sourceTree = "<group>"; };
 		A4282D8E1A9A60A9007AA13B /* Delete.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Delete.pdf; sourceTree = "<group>"; };
 		A4389C691AF679E20031B7BC /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		A439E1D01AF75AE5002EA8A8 /* DateUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateUtility.h; sourceTree = "<group>"; };
@@ -216,10 +227,6 @@
 		A4A1C4FA19B69158004394B9 /* TableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableView.h; sourceTree = "<group>"; };
 		A4A1C4FB19B69158004394B9 /* TableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableView.m; sourceTree = "<group>"; };
 		A4A1C50119B69520004394B9 /* Copy Clever.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Copy Clever.entitlements"; sourceTree = "<group>"; };
-		A4AA18301A4F3DE300181125 /* MASPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASPreferencesViewController.h; sourceTree = "<group>"; };
-		A4AA18311A4F3DE300181125 /* MASPreferencesWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MASPreferencesWindow.xib; sourceTree = "<group>"; };
-		A4AA18321A4F3DE300181125 /* MASPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASPreferencesWindowController.h; sourceTree = "<group>"; };
-		A4AA18331A4F3DE300181125 /* MASPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASPreferencesWindowController.m; sourceTree = "<group>"; };
 		A4AAC2491A9697A00064322D /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
 		A4AAD8EE1A83870700EAE0BC /* dogWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dogWhite.png; sourceTree = "<group>"; };
 		A4AAD8EF1A83870700EAE0BC /* dogBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dogBlack.png; sourceTree = "<group>"; };
@@ -291,6 +298,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A4176C8E1AFA266000644699 /* MASPreferences */ = {
+			isa = PBXGroup;
+			children = (
+				A4176C8F1AFA266000644699 /* .gitignore */,
+				A4176C911AFA266000644699 /* MASPreferences.podspec */,
+				A4176C921AFA266000644699 /* MASPreferencesViewController.h */,
+				A4176C931AFA266000644699 /* MASPreferencesWindow.xib */,
+				A4176C941AFA266000644699 /* MASPreferencesWindowController.h */,
+				A4176C951AFA266000644699 /* MASPreferencesWindowController.m */,
+			);
+			name = MASPreferences;
+			path = externals/MASPreferences;
+			sourceTree = SOURCE_ROOT;
+		};
 		A439E1D41AF75B3E002EA8A8 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -298,6 +319,8 @@
 				A439E1D11AF75AE5002EA8A8 /* DateUtility.m */,
 				A439E1D51AF761E8002EA8A8 /* ImageUtility.h */,
 				A439E1D61AF761E8002EA8A8 /* ImageUtility.m */,
+				A4176C881AFA248200644699 /* Common.h */,
+				A4176C891AFA248200644699 /* Common.m */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -365,18 +388,6 @@
 				A4761A961A94797C00AC5FA6 /* CopyCleverHelper.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		A47F7E431A4F3121003FA9EF /* MASPreferences */ = {
-			isa = PBXGroup;
-			children = (
-				A4AA18301A4F3DE300181125 /* MASPreferencesViewController.h */,
-				A4AA18311A4F3DE300181125 /* MASPreferencesWindow.xib */,
-				A4AA18321A4F3DE300181125 /* MASPreferencesWindowController.h */,
-				A4AA18331A4F3DE300181125 /* MASPreferencesWindowController.m */,
-				A47F7E4A1A4F3189003FA9EF /* Preferences */,
-			);
-			name = MASPreferences;
 			sourceTree = "<group>";
 		};
 		A47F7E4A1A4F3189003FA9EF /* Preferences */ = {
@@ -447,7 +458,7 @@
 				A4A1C50419B69565004394B9 /* Model */,
 				A4A1C50519B69570004394B9 /* View */,
 				A4A1C50319B69549004394B9 /* Controller */,
-				A47F7E431A4F3121003FA9EF /* MASPreferences */,
+				A4176C8E1AFA266000644699 /* MASPreferences */,
 				A4402CE11A91095400D13BF5 /* MASShortcut */,
 				A4A1C4A319B68D8E004394B9 /* Images.xcassets */,
 				A4A1C48F19B68D8E004394B9 /* Supporting Files */,
@@ -534,6 +545,7 @@
 				A4625F041AE6BB44000D3507 /* ChangeGroupNameSheetController.h */,
 				A4625F051AE6BB44000D3507 /* ChangeGroupNameSheetController.m */,
 				A4625F061AE6BB44000D3507 /* ChangeGroupNameSheetController.xib */,
+				A47F7E4A1A4F3189003FA9EF /* Preferences */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -664,6 +676,7 @@
 				A441B5CE1AF796FD0040F864 /* GeneralPreferencesView.xib in Resources */,
 				A4EA4AC11A9B9D2900C14912 /* Trash.png in Resources */,
 				A4EA4ADD1A9BBCD500C14912 /* StarYellow12.png in Resources */,
+				A4176C991AFA266000644699 /* MASPreferences.podspec in Resources */,
 				A4AF883C1A6C31A8002C4619 /* BookmarkBlue.png in Resources */,
 				A4AC85AE1A7E57A100726658 /* SidebarVIP.icns in Resources */,
 				A4EA4ACC1A9BBB0400C14912 /* StarOrange.png in Resources */,
@@ -699,13 +712,14 @@
 				A47F7E541A4F319D003FA9EF /* AdvancedPreferencesView.xib in Resources */,
 				A4E9266D1A8F9AEB006E4A5A /* Keyboard.icns in Resources */,
 				A4AF88331A6C278F002C4619 /* Bookmark.png in Resources */,
+				A4176C9A1AFA266000644699 /* MASPreferencesWindow.xib in Resources */,
 				A4AF88441A6C5240002C4619 /* play.png in Resources */,
 				A4EA4AD81A9BBCD500C14912 /* StarRed12.png in Resources */,
+				A4176C971AFA266000644699 /* .gitignore in Resources */,
 				A4AF88371A6C2967002C4619 /* BookmarkWhite.png in Resources */,
 				A4EA4ACE1A9BBB0400C14912 /* StarGreen.png in Resources */,
 				A4282D8F1A9A60A9007AA13B /* Delete.pdf in Resources */,
 				A4EA4ACF1A9BBB0400C14912 /* StarRed.png in Resources */,
-				A4AA18341A4F3DE300181125 /* MASPreferencesWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -722,7 +736,9 @@
 				A4DCE8011AEE805B0028E360 /* MainWindow.m in Sources */,
 				A4AB376A1A692FFB0051CE78 /* StatusItemView.m in Sources */,
 				A4DE6FE61A98CAFD00260F3B /* SegmentedCell.m in Sources */,
+				A4176C8A1AFA248200644699 /* Common.m in Sources */,
 				A4402CFC1A91095400D13BF5 /* MASDictionaryTransformer.m in Sources */,
+				A4176C9B1AFA266000644699 /* MASPreferencesWindowController.m in Sources */,
 				A4402D081A91095400D13BF5 /* MASShortcutView.m in Sources */,
 				A47F7E531A4F319D003FA9EF /* AdvancedPreferencesViewController.m in Sources */,
 				A4402CFE1A91095400D13BF5 /* MASHotKey.m in Sources */,
@@ -742,7 +758,6 @@
 				A4402D031A91095400D13BF5 /* MASShortcutMonitor.m in Sources */,
 				A44C771D1A9DC5FD006EC7BF /* Group.m in Sources */,
 				A4C757881A5C3B350038B3D6 /* OverviewTextField.m in Sources */,
-				A4AA18351A4F3DE300181125 /* MASPreferencesWindowController.m in Sources */,
 				A4A1C4CF19B690C0004394B9 /* ImageCellView.m in Sources */,
 				A4A1C4EE19B6913A004394B9 /* PasteboardController.m in Sources */,
 				A4A1C4FE19B69158004394B9 /* TableView.m in Sources */,

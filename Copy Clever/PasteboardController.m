@@ -8,7 +8,7 @@
 
 #import "PasteboardController.h"
 #import "AppDelegate.h"
-#import "MASPreferencesWindowController.h"
+#import "Common.h"
 #import "SourceApp.h"
 #import "ImageUtility.h"
 #import "PasteboardItemImage.h"
@@ -59,20 +59,39 @@ static PasteboardController* sharedInstance;
     }
 }
 
+#pragma mark Fetch Timer
+
+- (void)startNewFetchTimer
+{
+    float checkingInterval = [defaults floatForKey:CCCheckingInterval];
+    fetchItemsTimer = [NSTimer scheduledTimerWithTimeInterval:checkingInterval
+                                                       target:self
+                                                     selector:@selector(synchronizeWithPasteboard)
+                                                     userInfo:nil
+                                                      repeats:YES];
+}
+
 - (void)togglePollPasteBoardTimer
 {
     if (fetchItemsTimer == nil) {
         _changesCount = (int)[_pasteBoard changeCount];
-        fetchItemsTimer = [NSTimer scheduledTimerWithTimeInterval:0.5
-                                                           target:self
-                                                         selector:@selector(synchronizeWithPasteboard)
-                                                         userInfo:nil
-                                                          repeats:YES];
+        [self startNewFetchTimer];
     }
     else {
         [fetchItemsTimer invalidate];
         fetchItemsTimer = nil;
     }
+}
+
+- (void)restartPasteboardTimer
+{
+    [fetchItemsTimer invalidate];
+    fetchItemsTimer = nil;
+    [self startNewFetchTimer];
+}
+
+- (BOOL)isFetchTimerRunning {
+    return [fetchItemsTimer isValid];
 }
 
 #pragma mark - Notifications

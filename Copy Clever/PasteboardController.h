@@ -20,6 +20,8 @@
 
 + (PasteboardController*)sharedInstance;
 
+- (BOOL)isFetchTimerRunning;
+- (void)restartPasteboardTimer;
 - (void)togglePollPasteBoardTimer;
 - (BOOL)copyItemToPasteboard:(PasteboardItem*)item;
 - (void)putNewestItemToPasteboard;

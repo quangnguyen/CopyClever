@@ -15,6 +15,11 @@
 {
     [self setDoubleAction:@selector(doubleClick:)];
     _rightClickedRow = -1;
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(reloadData)
+                                                 name:@"DisplayFontNotification"
+                                               object:nil];
 }
 
 - (void)drawGridInClipRect:(NSRect)clipRect
