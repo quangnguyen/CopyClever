@@ -1,6 +1,6 @@
 //
 //  AppDelegate.h
-//  Copy Clever
+//  CopyClever
 //
 //  Created by Quang Nguyen on 03/09/14.
 //  Copyright (c) 2014 Quang Nguyen. All rights reserved.
@@ -18,7 +18,7 @@
 @property (readonly, strong, nonatomic) NSManagedObjectContext* managedObjectContext;
 @property (nonatomic, strong) MenuBarController* menuBarController;
 @property (nonatomic, strong) MainWindowController* mainWindowController;
-@property (strong) PasteboardController* pasteboardController;
+@property (nonatomic, strong) PasteboardController* pasteboardController;
 
 - (IBAction)toggleWindow:(id)sender;
 - (IBAction)saveAction:(id)sender;

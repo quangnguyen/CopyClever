@@ -1,6 +1,6 @@
 //
 //  OverviewTextField.h
-//  Copy Clever
+//  CopyClever
 //
 //  Created by Quang Nguyen on 06/01/15.
 //  Copyright (c) 2015 Quang Nguyen. All rights reserved.

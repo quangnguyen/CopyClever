@@ -1,6 +1,6 @@
 //
 //  AppDelegate.m
-//  Copy Clever
+//  CopyClever
 //
 //  Created by Quang Nguyen on 03/09/14.
 //  Copyright (c) 2014 Quang Nguyen. All rights reserved.

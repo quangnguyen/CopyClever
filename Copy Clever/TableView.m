@@ -1,6 +1,6 @@
 //
 //  TableView.m
-//  Pasteboard
+//  CopyClever
 //
 //  Created by Quang Nguyen on 19/08/14.
 //  Copyright (c) 2014 Quang Nguyen. All rights reserved.
@@ -79,7 +79,6 @@
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [[NSApplication sharedApplication] unhide:nil];
         });
-        //        [[NSApplication sharedApplication] unhide:nil];
     }
 }
 

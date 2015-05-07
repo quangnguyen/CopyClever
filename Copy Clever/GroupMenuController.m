@@ -39,31 +39,31 @@ NSString* const CCInitTagColor = @"InitTagColor";
 - (void)setColorForFirstSegment:(NSInteger)colorNumber
 {
     switch (colorNumber) {
-    case 1:
+    case RED:
         _selectedImageName = @"StarRed12";
         _selectedGroupName = @"Red";
         break;
-    case 2:
+    case ORANGE:
         _selectedImageName = @"StarOrange12";
         _selectedGroupName = @"Orange";
         break;
-    case 3:
+    case YELLOW:
         _selectedImageName = @"StarYellow12";
         _selectedGroupName = @"Yellow";
         break;
-    case 4:
+    case GREEN:
         _selectedImageName = @"StarGreen12";
         _selectedGroupName = @"Green";
         break;
-    case 5:
+    case BLUE:
         _selectedImageName = @"StarBlue12";
         _selectedGroupName = @"Blue";
         break;
-    case 6:
+    case PURPLE:
         _selectedImageName = @"StarPurple12";
         _selectedGroupName = @"Purple";
         break;
-    case 7:
+    case GREY:
         _selectedImageName = @"StarGrey12";
         _selectedGroupName = @"Grey";
         break;
@@ -74,7 +74,7 @@ NSString* const CCInitTagColor = @"InitTagColor";
 
 - (IBAction)didClickOnRed:(id)sender
 {
-    [self setColorForFirstSegment:1];
+    [self setColorForFirstSegment:RED];
     NSUserDefaults* userDefaults = [NSUserDefaults standardUserDefaults];
     [userDefaults setInteger:RED forKey:CCInitTagColor];
     [_groupControl setImage:[NSImage imageNamed:@"StarRed12"] forSegment:0];
@@ -82,7 +82,7 @@ NSString* const CCInitTagColor = @"InitTagColor";
 
 - (IBAction)didClickOnOrange:(id)sender
 {
-    [self setColorForFirstSegment:2];
+    [self setColorForFirstSegment:ORANGE];
     NSUserDefaults* userDefaults = [NSUserDefaults standardUserDefaults];
     [userDefaults setInteger:ORANGE forKey:CCInitTagColor];
     [_groupControl setImage:[NSImage imageNamed:@"StarOrange12"] forSegment:0];
@@ -90,7 +90,7 @@ NSString* const CCInitTagColor = @"InitTagColor";
 
 - (IBAction)didClickOnYellow:(id)sender
 {
-    [self setColorForFirstSegment:3];
+    [self setColorForFirstSegment:YELLOW];
     NSUserDefaults* userDefaults = [NSUserDefaults standardUserDefaults];
     [userDefaults setInteger:YELLOW forKey:CCInitTagColor];
     [_groupControl setImage:[NSImage imageNamed:@"StarYellow12"] forSegment:0];
@@ -98,7 +98,7 @@ NSString* const CCInitTagColor = @"InitTagColor";
 
 - (IBAction)didClickOnGreen:(id)sender
 {
-    [self setColorForFirstSegment:4];
+    [self setColorForFirstSegment:GREEN];
     NSUserDefaults* userDefaults = [NSUserDefaults standardUserDefaults];
     [userDefaults setInteger:GREEN forKey:CCInitTagColor];
     [_groupControl setImage:[NSImage imageNamed:@"StarGreen12"] forSegment:0];
@@ -106,7 +106,7 @@ NSString* const CCInitTagColor = @"InitTagColor";
 
 - (IBAction)didClickOnBlue:(id)sender
 {
-    [self setColorForFirstSegment:5];
+    [self setColorForFirstSegment:BLUE];
     NSUserDefaults* userDefaults = [NSUserDefaults standardUserDefaults];
     [userDefaults setInteger:BLUE forKey:CCInitTagColor];
     [_groupControl setImage:[NSImage imageNamed:@"StarBlue12"] forSegment:0];
@@ -114,7 +114,7 @@ NSString* const CCInitTagColor = @"InitTagColor";
 
 - (IBAction)didClickOnPurple:(id)sender
 {
-    [self setColorForFirstSegment:6];
+    [self setColorForFirstSegment:PURPLE];
     NSUserDefaults* userDefaults = [NSUserDefaults standardUserDefaults];
     [userDefaults setInteger:PURPLE forKey:CCInitTagColor];
     [_groupControl setImage:[NSImage imageNamed:@"StarPurple12"] forSegment:0];
@@ -122,7 +122,7 @@ NSString* const CCInitTagColor = @"InitTagColor";
 
 - (IBAction)didClickOnGrey:(id)sender
 {
-    [self setColorForFirstSegment:7];
+    [self setColorForFirstSegment:GREY];
     NSUserDefaults* userDefaults = [NSUserDefaults standardUserDefaults];
     [userDefaults setInteger:GREY forKey:CCInitTagColor];
     [_groupControl setImage:[NSImage imageNamed:@"StarGrey12"] forSegment:0];

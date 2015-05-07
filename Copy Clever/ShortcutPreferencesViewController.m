@@ -1,6 +1,6 @@
 //
 //  ShortcutPreferencesViewController.m
-//  Copy Clever
+//  CopyClever
 //
 //  Created by Quang Nguyen on 14/02/15.
 //  Copyright (c) 2015 Quang Nguyen. All rights reserved.
@@ -15,7 +15,6 @@
     return [super initWithNibName:@"ShortcutPreferencesView" bundle:nil];
 }
 
-#pragma mark -
 #pragma mark MASPreferencesViewController
 
 - (NSString*)identifier

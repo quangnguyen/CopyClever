@@ -1,5 +1,9 @@
 //
-// This is a sample General preference pane
+//  GeneralPreferencesViewController.h
+//  CopyClever
+//
+//  Created by Quang Nguyen on 14/02/15.
+//  Copyright (c) 2015 Quang Nguyen. All rights reserved.
 //
 
 #import "MASPreferencesViewController.h"

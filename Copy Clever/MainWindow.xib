@@ -571,7 +571,7 @@
                     </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="tHn-ts-4rk"/>
-                <menuItem title="Quit Copy Clever" keyEquivalent="q" id="btS-Lt-2XQ">
+                <menuItem title="Quit CopyClever" keyEquivalent="q" id="btS-Lt-2XQ">
                     <connections>
                         <action selector="clickOnQuitItem:" target="0Cv-nc-RU3" id="bSN-OP-o4l"/>
                     </connections>

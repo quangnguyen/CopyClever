@@ -1,6 +1,6 @@
 //
 //  PopupMenuController.m
-//  Copy Clever
+//  CopyClever
 //
 //  Created by Quang Nguyen on 29/12/14.
 //  Copyright (c) 2014 Quang Nguyen. All rights reserved.
