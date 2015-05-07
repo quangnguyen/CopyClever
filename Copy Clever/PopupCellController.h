@@ -1,6 +1,6 @@
 //
 //  PopupCellController.h
-//  Copy Clever
+//  CopyClever
 //
 //  Created by Quang Nguyen on 2/6/15.
 //  Copyright (c) 2015 Quang Nguyen. All rights reserved.

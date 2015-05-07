@@ -1,5 +1,5 @@
 //
-//  Copy Clever.m
+//  CopyClever.m
 //  CopyClever
 //
 //  Created by Quang Nguyen on 2/25/15.

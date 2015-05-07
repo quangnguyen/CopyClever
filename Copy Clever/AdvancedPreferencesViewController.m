@@ -1,3 +1,10 @@
+//
+//  AdvancedPreferencesViewController.m
+//  CopyClever
+//
+//  Created by Quang Nguyen on 14/02/15.
+//  Copyright (c) 2015 Quang Nguyen. All rights reserved.
+//
 
 #import "AdvancedPreferencesViewController.h"
 #import "Common.h"
@@ -12,7 +19,6 @@
     return [super initWithNibName:@"AdvancedPreferencesView" bundle:nil];
 }
 
-#pragma mark -
 #pragma mark MASPreferencesViewController
 
 - (NSString*)identifier

@@ -1,3 +1,10 @@
+//
+//  GeneralPreferencesViewController.m
+//  CopyClever
+//
+//  Created by Quang Nguyen on 14/02/15.
+//  Copyright (c) 2015 Quang Nguyen. All rights reserved.
+//
 
 #import "GeneralPreferencesViewController.h"
 #import <ServiceManagement/ServiceManagement.h>
@@ -10,7 +17,6 @@
     return [super initWithNibName:@"GeneralPreferencesView" bundle:nil];
 }
 
-#pragma mark -
 #pragma mark MASPreferencesViewController
 
 - (NSString*)identifier

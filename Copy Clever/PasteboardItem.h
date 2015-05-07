@@ -1,5 +1,5 @@
 //
-//  Copy Clever.h
+//  CopyClever.h
 //  CopyClever
 //
 //  Created by Quang Nguyen on 2/25/15.

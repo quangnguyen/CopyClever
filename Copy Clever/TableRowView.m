@@ -1,6 +1,6 @@
 //
 //  CCTableRowView.m
-//  Copy Clever
+//  CopyClever
 //
 //  Created by Quang Nguyen on 22/12/14.
 //  Copyright (c) 2014 Quang Nguyen. All rights reserved.

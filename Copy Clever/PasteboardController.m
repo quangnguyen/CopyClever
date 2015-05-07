@@ -1,6 +1,6 @@
 //
 //  PasteBoardItemController.m
-//  Pasteboard
+//  CopyClever
 //
 //  Created by Quang Nguyen on 15/08/14.
 //  Copyright (c) 2014 Quang Nguyen. All rights reserved.
@@ -12,8 +12,8 @@
 #import "SourceApp.h"
 #import "ImageUtility.h"
 #import "PasteboardItemImage.h"
-#include "PasteboardItemText.h"
-#include "PasteboardItemURL.h"
+#import "PasteboardItemText.h"
+#import "PasteboardItemURL.h"
 
 static PasteboardController* sharedInstance;
 
@@ -99,7 +99,7 @@ static PasteboardController* sharedInstance;
 - (void)showDesktopNotification:(NSString*)message
 {
     NSUserNotification* notification = [[NSUserNotification alloc] init];
-    notification.title = @"Copy Clever!";
+    notification.title = @"CopyClever!";
     notification.informativeText = message;
     notification.soundName = NSUserNotificationDefaultSoundName;
     [[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:notification];
@@ -478,11 +478,6 @@ static PasteboardController* sharedInstance;
         PasteboardItem* newestItem = [results firstObject];
         [self copyItemToPasteboard:newestItem];
     }
-}
-
-- (BOOL)isNewApp:(NSString*)appName
-{
-    return YES;
 }
 
 @end
