@@ -160,7 +160,7 @@
         _isPastePlainText = NO;
     }
 
-    NSInteger colorNumber = [defaults integerForKey:CCInitTagColor];
+    NSInteger colorNumber = [defaults integerForKey:CCInitGroupColor];
     [self setGroupControlColor:colorNumber];
 
     // Put table controller in transponder chain

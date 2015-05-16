@@ -77,6 +77,16 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="itM-qT-LBn">
+                    <rect key="frame" x="34" y="133" width="155" height="32"/>
+                    <buttonCell key="cell" type="push" title="Reset User Defaults" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="qHK-FY-RjH">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="resetUserDefaults:" target="-2" id="gGt-71-dLO"/>
+                    </connections>
+                </button>
             </subviews>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="81" secondAttribute="bottom" constant="20" symbolic="YES" id="107"/>
@@ -98,7 +108,7 @@
                 <constraint firstItem="89" firstAttribute="leading" secondItem="D77-Kb-rVM" secondAttribute="leading" id="u26-bb-7DN"/>
                 <constraint firstAttribute="trailing" secondItem="91" secondAttribute="trailing" constant="38" id="xhU-rg-Gbb"/>
             </constraints>
-            <point key="canvasLocation" x="259" y="133.5"/>
+            <point key="canvasLocation" x="615" y="204.5"/>
         </customView>
     </objects>
 </document>

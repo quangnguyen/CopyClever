@@ -18,5 +18,6 @@ extern NSString *const CCRestorePasteboard;
 extern NSString *const CCNotificationCenter;
 extern NSString *const CCUseSameFont;
 extern NSString *const CCCheckingInterval;
+extern NSString *const CCLaunched;
 
 @end

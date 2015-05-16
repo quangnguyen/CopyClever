@@ -486,7 +486,7 @@
                                                     <action selector="clickOnClearGroup:" target="5ZW-zj-hFg" id="Hb0-rK-sna"/>
                                                 </connections>
                                             </menuItem>
-                                            <menuItem title="Rename Group..." id="Avt-pD-HQw">
+                                            <menuItem title="Rename Groups..." id="Avt-pD-HQw">
                                                 <modifierMask key="keyEquivalentModifierMask"/>
                                                 <connections>
                                                     <action selector="didTapOpenButton:" target="-2" id="gZi-F7-unM"/>
@@ -532,13 +532,20 @@
                     <constraint firstItem="28z-T6-R5M" firstAttribute="centerY" secondItem="TGN-NN-P42" secondAttribute="centerY" id="zeN-j8-R5b"/>
                 </constraints>
             </view>
-            <point key="canvasLocation" x="680" y="-11.5"/>
+            <point key="canvasLocation" x="313" y="-22.5"/>
         </window>
         <customObject id="T0H-Ey-DdJ" customClass="GroupMenuController">
             <connections>
+                <outlet property="blueItem" destination="20l-Wm-VMZ" id="tCM-kw-fJe"/>
                 <outlet property="clearGroupMenuItem" destination="YrE-yu-CUH" id="r3S-F3-z6T"/>
+                <outlet property="greenItem" destination="tKr-pp-AGC" id="ddc-zN-aCh"/>
+                <outlet property="greyItem" destination="elZ-5h-0Nm" id="ASF-hU-chc"/>
                 <outlet property="groupControl" destination="TGN-NN-P42" id="PVF-mh-mgn"/>
                 <outlet property="groupControlMenu" destination="9oS-FE-Eja" id="VB0-ex-3ar"/>
+                <outlet property="orangeItem" destination="jQr-uR-TNB" id="URt-NN-pKv"/>
+                <outlet property="purpleItem" destination="xqO-cC-aoT" id="4lF-rR-Dhr"/>
+                <outlet property="redItem" destination="Lif-gk-RqH" id="6PW-Gy-ysw"/>
+                <outlet property="yellowItem" destination="0uo-zo-DT9" id="TQc-ea-2WT"/>
             </connections>
         </customObject>
         <customObject id="ADC-Lu-v2R" userLabel="Change Group Name Controller" customClass="ChangeGroupNameSheetController"/>

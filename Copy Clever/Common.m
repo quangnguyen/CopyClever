@@ -18,5 +18,6 @@ NSString *const CCRestorePasteboard = @"restorePasteboard";
 NSString *const CCNotificationCenter = @"notificationCenter";
 NSString *const CCUseSameFont = @"useSameFont";
 NSString *const CCCheckingInterval = @"checkingInterval";
+NSString *const CCLaunched = @"launched";
 
 @end
