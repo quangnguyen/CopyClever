@@ -350,46 +350,12 @@ int const URL_ITEM = 3;
 
 #pragma mark Actions
 
-- (Group *)persistGroupWithGroupName:(NSString *)groupName
-{
-    NSString* imageName = [_groupMenuController selectedImageName];
-    Group *group = [NSEntityDescription insertNewObjectForEntityForName:@"Group" inManagedObjectContext:_context];
-    [group setValue:groupName forKeyPath:@"name"];
-    [group setValue:imageName forKeyPath:@"image"];
-    NSError* saveError;
-    [_context save:&saveError];
-    return group;
-}
-
-- (NSArray*)fetchGroupWithGroupName:(NSString *)groupName
-{
-    NSFetchRequest* request = [NSFetchRequest fetchRequestWithEntityName:@"Group"];
-    [request setPredicate:[NSPredicate predicateWithFormat:@"name = %@", groupName]];
-    [request setFetchLimit:1];
-    NSError* fetchError;
-    NSArray* result = [_context executeFetchRequest:request error:&fetchError];
-    return result;
-}
-
-- (Group*)fetchOrCreateGroupWithName:(NSString *)groupName
-{
-    NSArray *result = [self fetchGroupWithGroupName:groupName];
-    Group* group;
-    if ([result count] == 0) {
-        group = [self persistGroupWithGroupName:groupName];
-    }
-    else {
-        group = [result firstObject];
-    }
-    return group;
-}
-
 - (IBAction)clickOnGroupButtonInCell:(id)sender
 {
     BasisCellView* cellView = (BasisCellView*)[sender superview];
     if (cellView && [_groupMenuController selectedGroupName]) {
-        NSString* groupName = [_groupMenuController selectedGroupName];
-        Group* group = [self fetchOrCreateGroupWithName:groupName];
+        NSString* groupImageName = [_groupMenuController selectedImageName];
+        Group* group = [_groupMenuController fetchOrCreateGroupWithImageName:groupImageName];
         NSInteger row = [_tableView rowForView:cellView];
         PasteboardItem* item = [self objectAtIndex:row];
         [group addPasteboardItemObject:item];
@@ -400,8 +366,8 @@ int const URL_ITEM = 3;
 - (void)clickOnGroupSegmentButton:(id)sender {
     NSArray* arrayOfSelectedObjects = [_arrayController selectedObjects];
     if (arrayOfSelectedObjects.count > 0) {
-        NSString* groupName = [_groupMenuController selectedGroupName];
-        Group* group = [self fetchOrCreateGroupWithName:groupName];
+        NSString* groupImageName = [_groupMenuController selectedImageName];
+        Group* group = [_groupMenuController fetchOrCreateGroupWithImageName:groupImageName];
         NSSet* setOfItems = [NSSet setWithArray:arrayOfSelectedObjects];
         [group addPasteboardItem:setOfItems];
         [_tableView reloadData];

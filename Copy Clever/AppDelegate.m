@@ -22,13 +22,14 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification*)aNotification
 {
-    // Insert code here to initialize your application
+    // Initialize application
     [self setUpUserDefaults];
     [self setUpNotification];
     [self setUpMenuBar];
     [self setUpMainWindow];
     [self setUpPasteboardController];
     [self setUpShortCuts];
+    [self setUpStuffsOnFirstLaunch];
 }
 
 - (void)setUpNotification
@@ -56,6 +57,7 @@
     //    [defaultValues setValue:NO forKey:CCPastePlainText];
     [defaultValues setValue:[NSNumber numberWithFloat:0.5f] forKey:CCCheckingInterval];
     [defaultValues setValue:[NSNumber numberWithBool:YES] forKey:CCUseSameFont];
+    [defaultValues setValue:[NSNumber numberWithBool:NO] forKey:CCLaunched];
     NSUserDefaults* userDefaults = [NSUserDefaults standardUserDefaults];
     [userDefaults registerDefaults:defaultValues];
 }
@@ -82,6 +84,18 @@
                                        toAction:^{
                                            [self pasteItemInPasteboard];
                                        }];
+}
+
+- (void)setUpStuffsOnFirstLaunch
+{
+    BOOL isLaunched = [[NSUserDefaults standardUserDefaults] boolForKey:CCLaunched];
+    
+    if (!isLaunched) {
+        NSLog(@"First run");
+        
+        [[NSUserDefaults standardUserDefaults] setValue:[NSNumber numberWithBool:YES] forKey:CCLaunched];
+        
+    }
 }
 
 #pragma mark - Actions

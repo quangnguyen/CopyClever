@@ -7,6 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "Group.h"
 
 extern NSInteger const RED;
 extern NSInteger const ORANGE;
@@ -15,7 +16,7 @@ extern NSInteger const GREEN;
 extern NSInteger const BLUE;
 extern NSInteger const PURPLE;
 extern NSInteger const GREY;
-extern NSString* const CCInitTagColor;
+extern NSString* const CCInitGroupColor;
 
 @interface GroupMenuController : NSViewController
 
@@ -35,12 +36,14 @@ extern NSString* const CCInitTagColor;
 @property (weak) IBOutlet NSMenuItem* greyItem;
 
 // Color menu actions
-- (IBAction)didClickOnRed:(id)sender;
-- (IBAction)didClickOnOrange:(id)sender;
-- (IBAction)didClickOnYellow:(id)sender;
-- (IBAction)didClickOnGreen:(id)sender;
-- (IBAction)didClickOnBlue:(id)sender;
-- (IBAction)didClickOnPurple:(id)sender;
-- (IBAction)didClickOnGrey:(id)sender;
+- (IBAction)didClickOnRed:(NSMenuItem*)sender;
+- (IBAction)didClickOnOrange:(NSMenuItem*)sender;
+- (IBAction)didClickOnYellow:(NSMenuItem*)sender;
+- (IBAction)didClickOnGreen:(NSMenuItem*)sender;
+- (IBAction)didClickOnBlue:(NSMenuItem*)sender;
+- (IBAction)didClickOnPurple:(NSMenuItem*)sender;
+- (IBAction)didClickOnGrey:(NSMenuItem*)sender;
+
+- (Group*)fetchOrCreateGroupWithImageName:(NSString *)groupImageName;
 
 @end

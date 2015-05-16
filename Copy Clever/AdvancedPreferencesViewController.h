@@ -14,5 +14,7 @@
 @property (weak) IBOutlet NSSlider* checkingIntervalSlider;
 
 - (IBAction)changeIntervalSlider:(id)sender;
+- (IBAction)resetUserDefaults:(id)sender;
+
 
 @end
