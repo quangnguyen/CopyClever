@@ -19,5 +19,6 @@ extern NSString *const CCNotificationCenter;
 extern NSString *const CCUseSameFont;
 extern NSString *const CCCheckingInterval;
 extern NSString *const CCLaunched;
+extern NSString *const CCShowLeftView;
 
 @end
