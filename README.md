@@ -20,7 +20,6 @@ CopyClever is a opensource tool that provides accessing to your clipboard's hist
 
 ## Screenshots
 
-![CopyClever](https://dl.dropboxusercontent.com/u/37387976/CopyClever.png)
 
 ## Credits
 
