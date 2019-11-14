@@ -20,6 +20,9 @@ CopyClever is a opensource tool that provides accessing to your clipboard's hist
 
 ## Screenshots
 
+## Reviews
+https://mac.softpedia.com/get/Utilities/CopyClever.shtml
+
 
 ## Credits
 
