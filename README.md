@@ -1,6 +1,4 @@
-# [CopyClever](https://www.cleverstuffs.com) (Beta) - Pasteboard Manager for OS X
-
-[![Build Status](https://travis-ci.org/quangnguyen/CopyClever.svg?branch=master)](https://travis-ci.org/quangnguyen/CopyClever)
+# Pasteboard Manager for OS X (BETA)
 
 ## What is it?
 CopyClever is an open-source tool designed to provide access to your clipboard history. Its icon resides in the menu bar, enabling you to retrieve all previously copied or cut items. CopyClever supports various types of content including text, photos, files, and folders. To paste an item, simply double-click on it within the popup window.
@@ -17,12 +15,6 @@ CopyClever is an open-source tool designed to provide access to your clipboard h
 * Automatically restores the last item to the pasteboard upon app startup at login
 * Supports various content types including text, photos, files, and folders
 * Compatible with macOS 10.8 and newer versions
-
-## Screenshots
-
-## Reviews
-https://mac.softpedia.com/get/Utilities/CopyClever.shtml
-
 
 ## Credits
 
