@@ -3,20 +3,20 @@
 [![Build Status](https://travis-ci.org/quangnguyen/CopyClever.svg?branch=master)](https://travis-ci.org/quangnguyen/CopyClever)
 
 ## What is it?
-CopyClever is a opensource tool that provides accessing to your clipboard's history. CopyClever's icon is placed on the menu bar and allows you to call up all of the items you've copied or cut. CopyClever supports several sorts of items such as texts, photos, files, folders. To paste a item, you just need to double click on it in the popup window.
+CopyClever is an open-source tool designed to provide access to your clipboard history. Its icon resides in the menu bar, enabling you to retrieve all previously copied or cut items. CopyClever supports various types of content including text, photos, files, and folders. To paste an item, simply double-click on it within the popup window.
 
 ## Features
 
-* Record and display copied or cut items
-* Store recorded time of items and the source apps where items come from
-* Name items with customized titles
-* Items management in different groups
-* Fully review items of clipboard's history
-* Paste items from clipboard's history with double click
-* Paste text items as plain text or rich text format (RTF)
-* Restore last item to pasteboard while starting app at login
-* Support texts, photos, files, folder
-* Support OS X 10.8 and newer
+* Records and displays copied or cut items
+* Stores timestamp and source app information for each item
+* Customizable naming for items
+* Organizes items into different groups for better management
+* Provides comprehensive review of clipboard history
+* Enables pasting of items from history with a double-click
+* Supports pasting text items in plain text or rich text format (RTF)
+* Automatically restores the last item to the pasteboard upon app startup at login
+* Supports various content types including text, photos, files, and folders
+* Compatible with macOS 10.8 and newer versions
 
 ## Screenshots
 
